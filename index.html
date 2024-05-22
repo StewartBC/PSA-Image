@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="PSA Image Downloader">
+    <meta name="keywords" content="PSA Image Downloader">
+    <meta name="author" content="StewartBC">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.jpg">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+        
+    <title>PSA Image Downloader</title>
+    <style>
+
+        .pink-background {
+            background-color:#F8779C !important;
+        }
+        .btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:visited,
+.active
+ {
+    background-color: #D50B44 !important;
+    border-color: #D50B44 !important;
+}
+        .searchForm {
+            width: 1500px;
+        }
+
+        .navbar {
+            background-color: #FEECF1 !important;
+        }
+
+        #mainRow {
+            background-color: #FEECF1;
+            max-height: 700px;
+            overflow: scroll
+        }
+
+        .cardRow {
+            margin-bottom: 25px;
+        }
+
+        .cardImage {
+            width: 106%
+        }
+
+        .add {
+            margin-left: 5px;
+        }
+
+        .footerImage {
+            width: 5%;
+            margin-left: 10px;
+            
+        }
+
+        #total {
+            margin-left: 15px;
+        }
+
+        #footer {
+            background-color: #FCC5D4;
+        }
+
+    </style>
+
+</head>
+
+<body class="overflow-scroll">
+
+    <div id="wrap">
+        
+            <nav class="navbar navbar-light bg-light">
+            <form class="form-inline md-form form-sm searchForm">
+                <input id="firstCertForm" class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Enter First Cert #" aria-label="Enter First Cert #">
+                <i id="search" class="fa fa-search" aria-hidden="true"></i>
+            </form>
+            <form class="form-inline md-form form-sm searchForm">
+                <input id="orderSizeForm" class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Enter Order Size" aria-label="Enter Order Size">
+                <i id="search" class="fa fa-search" aria-hidden="true"></i>
+            </form>
+            </nav>
+        
+        <div id="main">
+   
+
+            <div id="mainRow" class="row overflow-scroll">
+                <div id="img1" class="col-md-3">
+
+                </div>
+                <div id="img2" class="col-md-3">
+                    
+                </div>
+                <div id="img3" class="col-md-3">
+                    
+                </div>
+                <div id="img4" class="col-md-3">
+                    
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <button id="getImages">Get Images</button>
+            <button id="copyString">Copy String</button>
+            <h3 id="progress">0</h3>
+        </div>
+   
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
